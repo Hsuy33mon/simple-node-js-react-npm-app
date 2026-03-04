@@ -5,6 +5,10 @@ pipeline {
         nodejs "Node18"
     }
 
+    environment {
+        CI = 'true'
+    }
+
     stages {
         stage('Build') {
             steps {
